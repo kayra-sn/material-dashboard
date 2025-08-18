@@ -6,3 +6,8 @@ gulp.task('open-app', function(){
   gulp.src('pages/dashboard.html')
   .pipe(open());
 });
+
+gulp.task('open-asansor', function(){
+  return gulp.src('pages/asansor.html')
+    .pipe(open());
+});

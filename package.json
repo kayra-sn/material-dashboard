@@ -9,6 +9,7 @@
   },
   "scripts": {
     "open-app": "gulp open-app",
+    "open-asansor": "gulp open-asansor",
     "start": "npm run open-app",
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile-scss": "sass --style expanded --source-map --precision=6 assets/scss/material-dashboard.scss assets/css/material-dashboard.css --quiet",

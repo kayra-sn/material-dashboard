@@ -1,0 +1,142 @@
+body {
+    background-color: #f0f4f8;
+    color: #33475b;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#sidebar {
+    min-width: 250px;
+    max-width: 250px;
+    background: #003366;
+    color: #cfd8dc;
+    transition: all 0.3s;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto;
+    z-index: 1030;
+}
+
+#sidebar .sidebar-header {
+    padding: 20px;
+    background: #002244;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    color: #fff;
+    user-select: none;
+}
+
+#sidebar ul.components {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#sidebar ul li {
+    padding: 15px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    user-select: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+#sidebar ul li:hover,
+#sidebar ul li.active {
+    background: #004080;
+    color: white;
+}
+
+#sidebar ul li i {
+    min-width: 20px;
+    font-size: 1.2rem;
+}
+
+#content {
+    margin-left: 250px;
+    padding: 30px;
+    min-height: 100vh;
+    background: white;
+    box-shadow: inset 0 0 15px rgb(0 0 0 / 0.05);
+    border-radius: 0 12px 12px 0;
+}
+
+.navbar-custom {
+    background-color: #00509e;
+    color: white;
+    border-radius: 12px;
+}
+
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link,
+.navbar-custom .navbar-text {
+    color: white;
+    user-select: none;
+}
+
+.btn-primary-custom {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary-custom:hover {
+    background-color: #0056b3;
+}
+
+.card {
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+    transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 6px 20px rgb(0 0 0 / 0.25);
+}
+
+#sidebar::-webkit-scrollbar { width: 6px; }
+#sidebar::-webkit-scrollbar-track { background: #002244; }
+#sidebar::-webkit-scrollbar-thumb { background: #004080; border-radius: 3px; }
+
+table th,
+table td { vertical-align: middle !important; }
+
+.action-icon {
+    cursor: pointer;
+    font-size: 1.15rem;
+    margin-left: 10px;
+    transition: color 0.2s ease;
+}
+
+.action-icon:hover { color: #0056b3; }
+
+#toastContainer { position: fixed; top: 1rem; right: 1rem; z-index: 1050; }
+
+@media (max-width: 768px) {
+    #sidebar {
+        position: relative;
+        height: auto;
+        max-width: 100%;
+        margin-bottom: 20px;
+    }
+    #content {
+        margin-left: 0;
+        border-radius: 12px;
+        box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+    }
+}
+
+/* Dark mode */
+body.dark {
+    background-color: #0f172a;
+    color: #e2e8f0;
+}
+body.dark #content { background: #111827; }
+body.dark .card { background: #0b1220; color: #dbeafe; box-shadow: 0 2px 6px rgb(0 0 0 / 0.6); }
+body.dark .navbar-custom { background-color: #0b4a8b; }
+body.dark #sidebar { background: #0b1220; }
+body.dark #sidebar .sidebar-header { background: #050a18; }
+body.dark #sidebar ul li:hover,
+body.dark #sidebar ul li.active { background: #1f2937; }

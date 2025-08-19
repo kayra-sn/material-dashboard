@@ -95,7 +95,14 @@
     bakim: 'asansor:bakim',
     teklif: 'asansor:teklif',
     muhasebe: 'asansor:muhasebe',
-    dark: 'asansor:dark'
+    dark: 'asansor:dark',
+    musteri: 'asansor:musteri',
+    sozlesme: 'asansor:sozlesme',
+    urun: 'asansor:urun',
+    fatura: 'asansor:fatura',
+    odeme: 'asansor:odeme',
+    kasa: 'asansor:kasa',
+    settings: 'asansor:settings'
   };
 
   // Dark mode
@@ -435,4 +442,3 @@
   renderTeklif();
   renderMuhasebe();
 })();
-

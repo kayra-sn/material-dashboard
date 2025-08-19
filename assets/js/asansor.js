@@ -95,6 +95,12 @@
     bakim: 'asansor:bakim',
     teklif: 'asansor:teklif',
     muhasebe: 'asansor:muhasebe',
+    musteri: 'asansor:musteri',
+    sozlesme: 'asansor:sozlesme',
+    tahsilat: 'asansor:tahsilat',
+    kasa: 'asansor:kasa',
+    gider: 'asansor:gider',
+    stok: 'asansor:stok',
     dark: 'asansor:dark'
   };
 
@@ -119,6 +125,12 @@
   const bakimTable = document.getElementById('bakimTable');
   const teklifTable = document.getElementById('teklifTable');
   const muhasebeTable = document.getElementById('muhasebeTable');
+  const musteriTable = document.getElementById('musteriTable');
+  const sozlesmeTable = document.getElementById('sozlesmeTable');
+  const tahsilatTable = document.getElementById('tahsilatTable');
+  const kasaTable = document.getElementById('kasaTable');
+  const giderTable = document.getElementById('giderTable');
+  const stokTable = document.getElementById('stokTable');
   const dashboardArizaTable = document.getElementById('arizaTable');
 
   function renderAriza(filter = {}) {
